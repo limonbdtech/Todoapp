@@ -13,24 +13,32 @@ align-items: center;
 `
 const Title = styled.h1`
  padding-bottom: 5px;
+
  font-size: 25px;
  font-family: Arial, Helvetica, sans-serif;
+ @media (max-width: 800px) {
+    padding-left: 8px;
+    }
 `
 
 const Pera = styled.p`
 font-size:18px;
 padding: 3px 0;
-
+@media (max-width: 800px) {
+    padding-left: 8px;
+    }
 `
 
-const Btn = styled.button`
+
+
+const Button = styled.button`
 background-color: white;
 color: gray;
-padding: 1px 6px;
+padding: 3px 10px;
 border-radius: 15px;
 margin-right: 20px;
 border: none;
-height:20px;
+
 outline: none;
 cursor: pointer;
 &:hover{
@@ -45,4 +53,4 @@ cursor: pointer;
 `
 
 
-export {Showstyle,Btn,Title,Pera}
+export {Showstyle,Button,Title,Pera}

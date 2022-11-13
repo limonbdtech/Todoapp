@@ -57,9 +57,15 @@ padding: 5px 10px;
 align-items: center;
 background-color: gray;
 margin-bottom:10px ;
+
 `
 let BoxStyle =styled.div`
 display: flex;
+flex-direction: row;
+
+@media (max-width: 800px) {
+   flex-direction: column;
+    }
 `
 
 export {Style,Label,Input,Btn,Form,BoxStyle}

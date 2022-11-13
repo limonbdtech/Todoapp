@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Showstyle, Btn,Pera,Title } from './Showstyle';
+import { Showstyle, Button,Pera,Title } from './Showstyle';
 
 const Show = ({show,getid}) => {
    let onRemove = ()=>{
@@ -16,7 +16,7 @@ const Show = ({show,getid}) => {
                  <Pera>{item.values.discrip}</Pera>
                 
                  </div>
-                 <Btn onClick={()=>getid(item.id)}>Remove</Btn>
+                 <Button onClick={()=>getid(item.id)}>Remove</Button>
         </Showstyle>
      })}
 
